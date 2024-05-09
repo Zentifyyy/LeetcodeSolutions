@@ -7,11 +7,10 @@
 // @lc code=start
 public class Solution {
     public bool IsPalindrome(int x) {
-        var xString = x.ToString();
+        string xString = x.ToString();
 
         if(xString.Length == 1){return true;}
 
-        bool result = true;
         int inverseI = xString.Length;
         
         for(int i = 0; i < xString.Length / 2; i++){
